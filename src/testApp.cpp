@@ -121,22 +121,6 @@ ofMesh testApp::performSmooth(ofMesh &m, float relaxationFactor){
         }
         
         result.addVertex(vert);
-        
-        /*
-         for(
-         std::vector<int>::const_iterator
-         jt=neighbours.begin(),
-         jend=neighbours.end(); jt!=jend; ++jt)
-         {
-         
-         
-           Vector3d offset =
-           nodes[*jt].position -
-           nodes[i].position;
-           offset *= m_lambda / neighbours.size();
-           newPositions[i] += offset;
-         }
-         */
     }
     return result;
 }
